@@ -10,6 +10,10 @@ gem "rails", "3.0.0.beta"
 # ActiveRecord requires a database adapter. By default,
 # Rails has selected sqlite3.
 gem "mysql"
+gem "mongrel"
+gem "cgi_multipart_eof_fix"
+gem "fastthread"
+gem "mongrel_experimental"
 
 ## Bundle the gems you use:
 # gem "bj"
