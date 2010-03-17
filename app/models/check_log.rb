@@ -1,6 +1,6 @@
 class CheckLog < ActiveRecord::Base
 
   # Associations
-  belongs_to :check
+  belongs_to :asset_service_check
 
 end
