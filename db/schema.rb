@@ -9,13 +9,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100312213218) do
+ActiveRecord::Schema.define(:version => 20100317224231) do
+
+  create_table "asset_service_checks", :force => true do |t|
+    t.integer  "asset_service_id"
+    t.integer  "check_id"
+    t.boolean  "enabled"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "asset_services", :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "service_id"
+    t.boolean  "enabled"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "assets", :force => true do |t|
     t.string   "name"
     t.string   "ip_address"
     t.string   "host_name"
     t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "check_logs", :force => true do |t|
+    t.integer  "check_id"
+    t.text     "run_output"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
