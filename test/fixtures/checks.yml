@@ -1,0 +1,14 @@
+ssh_respond:
+  name: SSH Port Respond
+  service: ssh
+  description: Polls the SSH port for a response
+
+mysql_respond:
+  name: mySQL Port Respond
+  service: mysql
+  description: Polls the mySQL port for a response
+
+apache_respond:
+  name: Apache Port Respond
+  service: apache
+  description: Polls the Apache port for a response

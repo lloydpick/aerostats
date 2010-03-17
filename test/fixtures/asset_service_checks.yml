@@ -1,0 +1,19 @@
+web_server_apache_port_check:
+  asset_service: web_server_apache
+  check: apache_respond
+  enabled: true
+
+web_server_ssh_port_check:
+  asset_service: web_server_ssh
+  check: ssh_respond
+  enabled: true
+
+db_server_mysql_port_check:
+  asset_service: db_server_mysql
+  check: mysql_respond
+  enabled: true
+  
+db_server_ssh_port_check:
+  asset_service: db_server_ssh
+  check: ssh_respond
+  enabled: true

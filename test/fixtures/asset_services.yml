@@ -1,0 +1,19 @@
+web_server_apache:
+  asset: web_server
+  service: apache
+  enabled: true
+
+web_server_ssh:
+  asset: web_server
+  service: ssh
+  enabled: true
+
+db_server_mysql:
+  asset: db_server
+  service: mysql
+  enabled: true
+
+db_server_ssh:
+  asset: db_server
+  service: ssh
+  enabled: true

@@ -1,0 +1,8 @@
+mysql:
+  name: mySQL
+
+apache:
+  name: Apache
+
+ssh:
+  name: SSH

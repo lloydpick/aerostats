@@ -1,0 +1,11 @@
+web_server:
+  name: Web1
+  ip_address: 127.0.0.1
+  host_name: web1.local
+  description: Web server hosting Aerostats
+
+db_server:
+  name: Db1
+  ip_address: 127.0.0.2
+  host_name: db1.local
+  description: Database server hosting the master db
