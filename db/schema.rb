@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100317225914) do
+ActiveRecord::Schema.define(:version => 20100317232533) do
 
   create_table "asset_service_checks", :force => true do |t|
     t.integer  "asset_service_id"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20100317225914) do
   end
 
   create_table "check_logs", :force => true do |t|
-    t.integer  "check_id"
+    t.integer  "asset_service_check_id"
     t.text     "run_output"
     t.datetime "created_at"
     t.datetime "updated_at"
